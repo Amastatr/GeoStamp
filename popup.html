@@ -1,0 +1,55 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+body{width:280px;font-family:Georgia,serif;background:#16140f;color:#e9e0cf;margin:0;padding:16px}
+h1{font-size:16px;margin:0 0 2px} h1 em{color:#c84a3e;font-style:italic}
+.k{font-family:monospace;font-size:9px;letter-spacing:.18em;color:#8a8170;text-transform:uppercase;margin:14px 0 4px}
+select,input{width:100%;box-sizing:border-box;background:#1f1b14;border:1px solid #332d23;color:#e9e0cf;
+ font-family:Georgia,serif;font-size:13px;padding:6px 8px}
+.row{display:flex;gap:6px}
+.row input{flex:1}
+.row button{width:auto;white-space:nowrap}
+button{font-family:monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+ background:#1f1b14;color:#e9e0cf;border:1px solid #332d23;padding:6px 9px;cursor:pointer}
+.presets{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chip{font-family:Georgia,serif;font-size:12px;background:#1f1b14;border:1px solid #332d23;color:#b6ac98;
+ padding:4px 8px;border-radius:2px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.chip.active{border-color:#c84a3e;color:#e9e0cf}
+.chip .x{color:#8a8170;font-family:monospace;font-size:11px}
+.hidden{display:none}
+.perm{font-family:monospace;font-size:10.5px;color:#b6ac98;margin-top:8px}
+.perm b{color:#e9e0cf}
+.toggle{display:flex;align-items:flex-start;gap:8px;margin-top:10px;font-size:12px;line-height:1.4}
+.toggle input{width:auto;margin-top:2px}
+.toggle .svc{display:block;font-family:monospace;font-size:9.5px;color:#8a8170}
+.preview{font-family:monospace;font-size:11px;color:#b6ac98;margin-top:14px;padding:8px;border:1px dashed #332d23;min-height:14px}
+.note{font-size:10.5px;color:#8a8170;line-height:1.5;margin-top:12px}
+</style></head><body>
+<h1>Geo<em>Stamp</em>.</h1>
+<div style="font-family:monospace;font-size:9px;letter-spacing:.14em;color:#8a8170">PLACE BESIDE THE MOMENT</div>
+<div class="k">Mode</div>
+<select id="mode">
+  <option value="off">Off (default)</option>
+  <option value="manual">Named place</option>
+  <option value="auto">Device location</option>
+</select>
+
+<div id="namedSection" class="hidden">
+  <div class="k">Named place</div>
+  <div class="row"><input id="label" placeholder="e.g. Pharr, TX" maxlength="40"><button id="addPreset">Save</button></div>
+  <div class="presets" id="presets"></div>
+</div>
+
+<div id="deviceSection" class="hidden">
+  <div class="k">Precision</div>
+  <select id="precision">
+    <option value="approx">Approximate (2 decimals)</option>
+    <option value="fine">Precise (4 decimals)</option>
+  </select>
+  <div class="perm" id="perm">Location permission: <b id="permState">…</b></div>
+  <label class="toggle"><input type="checkbox" id="resolveCity">
+    <span>Resolve to city<span class="svc" id="svc">(sends coords to BigDataCloud)</span></span></label>
+</div>
+
+<div class="preview" id="preview"></div>
+<div class="note">Stamps once, on send only. Off is honest: nothing is ever recorded or appended unless you choose it. Device location uses the browser's own site-permission prompt.</div>
+<script src="popup.js"></script>
+</body></html>
