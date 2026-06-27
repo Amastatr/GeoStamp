@@ -6,7 +6,7 @@ Stamps each sent AI-chat message with your location, at the
 precision you choose, including off, which is the default.
 
 `where should we eat` arrives as
-`where should we eat [GEO · Pharr, TX]`
+`where should we eat [GEO · Austin, TX]`
 
 Runs locally. The extension records nothing and sends nothing
 anywhere.
