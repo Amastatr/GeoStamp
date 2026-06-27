@@ -1,4 +1,6 @@
-# GeoStamp · The Optimizers
+Part of AI Performance Enhancers by Amastatr Innovation Haus: small Chrome extensions that add the context AI chat interfaces leave out. TimeStamp adds when, GeoStamp adds where, UserStamp adds who. Not a platform, not a fix for your workflow, just standing context supplied on every message. Overview: github.com/Amastatr
+
+# GeoStamp · AI Performance Enhancers
 
 Stamps each sent AI-chat message with your location, at the
 precision you choose, including off, which is the default.
@@ -16,7 +18,7 @@ Gemini (gemini.google.com) · Grok (grok.com)
 ## Install (unpacked)
 1. Open chrome://extensions
 2. Turn on Developer mode (top right)
-3. Click Load unpacked and select the geostamp-extension folder
+3. Click Load unpacked and select the GeoStamp folder
 
 ## Modes
 Off, the default: nothing ever fires. Manual label: your words,
