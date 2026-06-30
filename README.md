@@ -1,12 +1,12 @@
-Part of AI Performance Enhancers by Amastatr Innovation Haus: small Chrome extensions that add the context AI chat interfaces leave out. TimeStamp adds when, GeoStamp adds where, UserStamp adds who. Not a platform, not a fix for your workflow, just standing context supplied on every message. Overview: github.com/Amastatr
+Part of AI Contextualizers by Amastatr Innovation Haus: small Chrome extensions that add the context AI chat interfaces leave out. TimeStamp adds when, GeoStamp adds where, UserStamp adds who. Not a platform, not a fix for your workflow, just standing context supplied on every message. Overview: github.com/Amastatr
 
-# GeoStamp · AI Performance Enhancers
+# GeoStamp · AI Contextualizers
 
 Stamps each sent AI-chat message with your location, at the
 precision you choose, including off, which is the default.
 
 `where should we eat` arrives as
-`where should we eat [GEO · Austin, TX]`
+`where should we eat [GEO · Chicago, IL]`
 
 Runs locally. The extension records nothing and sends nothing
 anywhere.
@@ -39,7 +39,5 @@ message after enabling may carry the fallback label; coordinates
 are cached for five minutes so the stamp stays synchronous with
 the send.
 
-## The Optimizers
-One of three sibling extensions, TimeStamp, GeoStamp, and
-FileStamp, by Amastatr Innovation Haus, sharing one discipline:
-stamps fire once, on send only, and everything stays local.
+## AI Contextualizers
+One of three sibling extensions, TimeStamp, GeoStamp, and UserStamp, by Amastatr Innovation Haus, sharing one discipline: stamps fire once, on send only, and everything stays local.
