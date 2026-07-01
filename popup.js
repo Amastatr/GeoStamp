@@ -25,7 +25,7 @@ function preview() {
     cfg.mode === 'off' ? '(no stamp)' :
     cfg.mode === 'manual' ? (cfg.label ? `[GEO · ${cfg.label}]` : '(pick or add a named place)') :
     cfg.resolveCity ? '[GEO · <city>]' :
-    cfg.precision === 'fine' ? '[GEO · 26.2034, -98.2300]' : '[GEO · 26.20, -98.23]';
+    cfg.precision === 'fine' ? '[GEO · 41.8781, -87.6298]' : '[GEO · 41.88, -87.63]';
 }
 
 function showPermState() {

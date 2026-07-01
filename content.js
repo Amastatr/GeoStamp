@@ -1,4 +1,4 @@
-// GeoStamp v0.1.0 - The Optimizers - Amastatr
+// GeoStamp v3.0.0 - AI Contextualizers - Amastatr
 // Doctrine: OFF by default. Stamps fire once, on send intent only - never on input mutation.
 // (The TimeStamp lesson, 2026-06-09: per-mutation stamping produced 24 stamps in 8 seconds.)
 
