@@ -47,6 +47,9 @@ function showPermState() {
 }
 
 function render() {
+  const armed = cfg.mode !== 'off';
+  $('state').textContent = armed ? 'ON' : 'OFF';
+  $('state').className = 'state ' + (armed ? 'on' : 'off');
   $('mode').value = cfg.mode;
   $('label').value = cfg.label || '';
   $('precision').value = cfg.precision || 'approx';

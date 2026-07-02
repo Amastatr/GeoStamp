@@ -15,6 +15,10 @@ button{font-family:monospace;font-size:10px;letter-spacing:.1em;text-transform:u
 .chip.active{border-color:#c84a3e;color:#e9e0cf}
 .chip .x{color:#8a8170;font-family:monospace;font-size:11px}
 .hidden{display:none}
+.state{display:inline-block;font-family:monospace;font-size:10px;font-weight:bold;letter-spacing:.12em;
+ color:#FFFFFF;padding:3px 8px;border-radius:2px;margin:6px 0 2px}
+.state.on{background:#188038}
+.state.off{background:#C8102E}
 .perm{font-family:monospace;font-size:10.5px;color:#b6ac98;margin-top:8px}
 .perm b{color:#e9e0cf}
 .toggle{display:flex;align-items:flex-start;gap:8px;margin-top:10px;font-size:12px;line-height:1.4}
@@ -25,6 +29,7 @@ button{font-family:monospace;font-size:10px;letter-spacing:.1em;text-transform:u
 </style></head><body>
 <h1>Geo<em>Stamp</em>.</h1>
 <div style="font-family:monospace;font-size:9px;letter-spacing:.14em;color:#8a8170">PLACE BESIDE THE MOMENT</div>
+<span id="state" class="state off">OFF</span>
 <div class="k">Mode</div>
 <select id="mode">
   <option value="off">Off (default)</option>
