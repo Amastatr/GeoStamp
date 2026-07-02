@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "GeoStamp",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "background": { "service_worker": "background.js" },
   "description": "Place beside the moment. Stamps each sent AI-chat message with location at the precision you choose - including off.",
   "permissions": [
@@ -34,14 +34,16 @@
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "icon16.png",
-      "48": "icon48.png",
-      "128": "icon128.png"
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
     }
   },
   "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   }
 }
